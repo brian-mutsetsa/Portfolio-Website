@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <div class="preloader">
+        <h1 class="preloader-text">Data</h1>
+    </div>
+
     <div class="background-shapes">
         <span></span><span></span><span></span><span></span><span></span><span></span>
     </div>
@@ -17,6 +21,9 @@
     </div>
 
     <header class="main-header">
+        <div class="logo">
+            <a href="#">BTM</a>
+        </div>
         <nav class="main-nav">
             <ul>
                 <li><a href="#about">About</a></li>
@@ -27,16 +34,32 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </header>
+
+    <nav class="side-nav">
+        <ul>
+            <li><a href="#about" class="side-nav-link">About</a></li>
+            <li><a href="#skills" class="side-nav-link">Skills</a></li>
+            <li><a href="#projects" class="side-nav-link">Projects</a></li>
+            <li><a href="#certifications" class="side-nav-link">Certifications</a></li>
+            <li><a href="#experience" class="side-nav-link">Experience</a></li>
+            <li><a href="#contact" class="side-nav-link">Contact</a></li>
+        </ul>
+    </nav>
 
     <main>
         <section class="hero-section">
             <div class="hero-content animate-on-scroll">
                 <h1 class="hero-title">Brian Tanaka Mutsetsa</h1>
-                <p class="hero-subtitle">Data Scientist & Software Engineer<br>Transforming Data into Actionable Insights</p>
+                <p class="hero-subtitle">Data Scientist & Software Engineer <br> Transforming Data into Actionable Insights</p>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/brian-mutsetsa-025059263/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/brian-mutsetsa" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Brian-Tanaka-Mutsetsa" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
                 <a href="#projects" class="cta-button">View My Work</a>
             </div>
@@ -108,35 +131,93 @@
 
         <section id="projects" class="content-section animate-on-scroll">
             <h2 class="section-title">Projects</h2>
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
-                <button class="filter-btn" data-filter="web-dev">Web Dev</button>
+            <div class="filter-container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="data-analysis">Data Analysis & Viz</button>
+                    <button class="filter-btn" data-filter="software-dev">Software Dev</button>
+                    <button class="filter-btn" data-filter="data-science">Data Science Foundations</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="sql">SQL</button>
+                    <button class="filter-btn" data-filter="power-bi">Power BI</button>
+                    <button class="filter-btn" data-filter="web-scraping">Web Scraping</button>
+                </div>
             </div>
+            
             <div class="projects-grid">
-                <div class="project-card" data-category="data-analysis">
-                    <img src="https://picsum.photos/seed/project1/400/300" alt="Bicycle Sales Dashboard">
-                    <h3>Bicycle Sales Dashboard</h3>
-                    <p>Cleaned and aggregated sales data using SQL, then built an interactive Power BI dashboard to monitor sales trends, revenue, and rider demographics, enhancing strategic pricing decisions.</p>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">View Project</a>
+                <div class="project-card" data-category="data-analysis,sql,power-bi">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070" alt="Power BI Dashboard">
+                    <h3>End-to-End BI Dashboard</h3>
+                    <p>Executed an end-to-end project from data cleaning in SQL Server to building an interactive sales and demographics dashboard in Power BI.</p>
+                    <a href="https://github.com/Brian-Tanaka-Mutsetsa/Basic-Data-Analysis-End-to-End-Project-SQL-to-PowerBI-" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                 </div>
-                <div class="project-card" data-category="data-analysis">
-                    <img src="https://picsum.photos/seed/project2/400/300" alt="Book Sales Data Exploration">
-                    <h3>Book Sales Data Exploration</h3>
-                    <p>Utilized Python (Pandas) in a Jupyter Notebook to analyze a book sales dataset. Identified top-selling genres and sales patterns, providing actionable recommendations to refine marketing and pricing.</p>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">View Project</a>
+                <div class="project-card" data-category="data-analysis,python">
+                    <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=2070" alt="Book Sales Analysis">
+                    <h3>Book Sales Analysis</h3>
+                    <p>Analyzed a Kaggle dataset on book sales using Python (Pandas, Seaborn) to uncover trends in ratings, pricing, and genre popularity.</p>
+                    <a href="https://github.com/Brian-Tanaka-Mutsetsa/Python-Data-Analysis-Portfolio-Project---Book-Sales" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                 </div>
-                <div class="project-card" data-category="web-dev">
-                    <img src="https://picsum.photos/seed/project3/400/300" alt="Custom E-commerce Website">
-                    <h3>Custom E-commerce Website</h3>
-                    <p>Designed and delivered a custom WordPress e-commerce site for a safety equipment supplier, managing the project from domain registration and technical configuration to final deployment.</p>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">View Project</a>
+                <div class="project-card" data-category="data-analysis,python">
+                    <img src="https://images.unsplash.com/photo-1542037104-924839929659?q=80&w=2070" alt="Volleyball Analytics">
+                    <h3>Volleyball Performance EDA</h3>
+                    <p>Conducted Exploratory Data Analysis on the 2023 Volleyball Nations League dataset to find insights on team and player performance.</p>
+                    <a href="https://github.com/Brian-Tanaka-Mutsetsa/Exploratory-Data-Analysis-with-Python-Pandas---Volleyball-Dataset" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                 </div>
-                 <div class="project-card" data-category="data-analysis">
-                    <img src="https://picsum.photos/seed/project4/400/300" alt="Customer Review Analysis">
-                    <h3>Customer Review Analysis</h3>
-                    <p>Built a web scraper to gather customer reviews and then applied predictive modeling to understand key factors that influence positive and negative feedback, as part of the BA job simulation.</p>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">View Project</a>
+                 <div class="project-card" data-category="data-analysis,python">
+                    <img src="https://images.unsplash.com/photo-1555949963-ff98c8708533?q=80&w=1974" alt="Choropleth Map">
+                    <h3>Geospatial Crime Analysis</h3>
+                    <p>Identified the most dangerous US states by creating a choropleth map with Python, Pandas, and GeoJSON data as part of a Geoinformatics assignment.</p>
+                    <a href="https://github.com/Brian-Tanaka-Mutsetsa/Most_dangerous_state_in_America_between_2018_-_2022" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+
+                <div class="project-card" data-category="software-dev,python,sql">
+                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=2070" alt="Employee Management System">
+                    <h3>Employee Management System</h3>
+                    <p>A full-stack desktop application with a CustomTkinter UI and SQLite3 backend for employee data management, including a disaster recovery plan.</p>
+                    <a href="https://github.com/Brian-Tanaka-Mutsetsa/Employee-Management-System-Python" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+                 <div class="project-card" data-category="software-dev,python">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070" alt="Performance Tracking App">
+                    <h3>Personal Performance Tracker</h3>
+                    <p>Desktop app built with Tkinter, SQLite, and Matplotlib to track and visualize personal weekly performance metrics with historical trends.</p>
+                    <a href="https://github.com/Brian-Tanaka-Mutsetsa/Performance-App" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+                 <div class="project-card" data-category="software-dev,python">
+                    <img src="https://images.unsplash.com/photo-1598550463415-d3d4f12f6e2b?q=80&w=1974" alt="Rick and Morty Game">
+                    <h3>Rick & Morty Space Invaders</h3>
+                    <p>A classic 2D shooter game built with Pygame, featuring custom assets, scoring, and dynamic enemy movement with a Rick and Morty theme.</p>
+                    <a href="https://github.com/Brian-Tanaka-Mutsetsa/Rick-and-Morty-Space-Invaders" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+
+                <div class="project-card" data-category="data-science,python,web-scraping">
+                    <img src="https://images.unsplash.com/photo-1611273223310-82babef5dba8?q=80&w=2070" alt="Sea Level Predictor">
+                    <h3>Sea Level Predictor</h3>
+                    <p>FreeCodeCamp project using regression analysis with Pandas and Matplotlib to predict sea level rise based on historical NOAA data.</p>
+                    <a href="https://github.com/Brian-Tanaka-Mutsetsa/boilerplate-sea-level-predictor" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+                <div class="project-card" data-category="data-science,python">
+                    <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=2231" alt="Time Series Visualizer">
+                    <h3>Page View Time Series Visualizer</h3>
+                    <p>A FreeCodeCamp project to clean and visualize forum page view data using Pandas and Matplotlib to show trends over time.</p>
+                    <a href="https://github.com/Brian-Tanaka-Mutsetsa/boilerplate-page-view-time-series-visualizer" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+                <div class="project-card" data-category="data-science,python">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070" alt="Medical Data Visualizer">
+                    <h3>Medical Data Visualizer</h3>
+                    <p>Built a Flask API to process medical data with Pandas and generate categorical plots and heatmaps with Matplotlib/Seaborn.</p>
+                    <a href="https://github.com/Brian-Tanaka-Mutsetsa/boilerplate-medical-data-visualizer" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+                 <div class="project-card" data-category="data-science,python">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2070" alt="Demographic Analyzer">
+                    <h3>Demographic Data Analyzer</h3>
+                    <p>Analyzed US Census data using Pandas to answer specific demographic questions about race, education, and salary distribution.</p>
+                    <a href="https://github.com/Brian-Tanaka-Mutsetsa/boilerplate-demographic-data-analyzer" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+                 <div class="project-card" data-category="data-science,python">
+                    <img src="https://images.unsplash.com/photo-1509475826633-fed577a2c41b?q=80&w=2071" alt="Statistics Calculator">
+                    <h3>Statistics Calculator</h3>
+                    <p>A Python function using NumPy to calculate mean, variance, standard deviation, min, max, and sum across a 3x3 matrix.</p>
+                    <a href="https://github.com/Brian-Tanaka-Mutsetsa/boilerplate-mean-variance-standard-deviation-calculator" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                 </div>
             </div>
         </section>
@@ -227,8 +308,8 @@
 
     <footer class="main-footer">
          <div class="social-icons">
-            <a href="https://www.linkedin.com/in/brian-mutsetsa-025059263/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/brian-mutsetsa" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Brian-Tanaka-Mutsetsa" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
         <p>&copy; 2025 Brian Tanaka Mutsetsa. All Rights Reserved.</p>
     </footer>
