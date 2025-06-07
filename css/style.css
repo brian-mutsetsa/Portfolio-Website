@@ -288,4 +288,5 @@ body {
 @media (max-width: 480px) {
     .hero-title { font-size: 2rem; }
     .content-section { padding: 3rem 1rem; }
+    .filter-container{justify-items: left;}
 }
