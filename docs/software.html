@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software & Data | Brian Tanaka Mutsetsa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script type="module" crossorigin src="/Portfolio-Website/assets/main-CsBRvb5o.js"></script>
+  <link rel="stylesheet" crossorigin href="/Portfolio-Website/assets/main-BsDe2zWF.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="/">BTM</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/robotics.html">Robotics & STEM</a></li>
+                <li><a href="/software.html">Software & Data</a></li>
+                <li><button class="theme-toggle-btn" aria-label="Toggle Theme"><i class="fas fa-sun"></i></button></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <nav class="side-nav">
+        <ul>
+            <li><a href="/" class="side-nav-link">Home</a></li>
+            <li><a href="/robotics.html" class="side-nav-link">Robotics & STEM</a></li>
+            <li><a href="/software.html" class="side-nav-link">Software & Data</a></li>
+            <li><button class="theme-toggle-btn" aria-label="Toggle Theme"><i class="fas fa-sun"></i></button></li>
+        </ul>
+    </nav>
+
+    <main id="swup" class="transition-fade">
+        <section class="hero-section" style="min-height: auto; padding-top: 12rem; padding-bottom: 4rem;">
+            <div class="hero-content animate-on-scroll">
+                <h1 class="hero-title">Software Development & Data Science</h1>
+                <p class="hero-subtitle">Building robust systems and turning raw data into actionable intelligence.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section animate-on-scroll">
+            <h2 class="section-title">Portfolio Projects</h2>
+            <div class="filter-container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="software-dev">Software Dev</button>
+                    <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+                    <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+                </div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Example of linking to a specific project page -->
+                <div class="project-card" data-category="software-dev">
+                    <img src="/Portfolio-Website/assets/employee-management-system-CKZ-Phuh.jpg" alt="Employee Management System">
+                    <h3>Employee Management System</h3>
+                    <p>A full-stack desktop application with a CustomTkinter UI and SQLite3 backend for employee data management.</p>
+                    <a href="/projects/employee-management.html">View Case Study</a>
+                </div>
+
+                <div class="project-card" data-category="software-dev">
+                    <img src="/Portfolio-Website/assets/rick-and-morty-space-invaders-DddcqfCi.jpg" alt="Rick and Morty Game">
+                    <h3>Rick & Morty Space Invaders</h3>
+                    <p>A classic 2D shooter game built with Pygame, featuring custom assets and dynamic enemy movement.</p>
+                    <a href="https://github.com/brian-mutsetsa/Rick-and-Morty-Space-Invaders" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+
+                <div class="project-card" data-category="data-analysis">
+                    <img src="/Portfolio-Website/assets/end-to-end-bi-dashboard-Dp1f7yB8.jpg" alt="Power BI Dashboard">
+                    <h3>End-to-End BI Dashboard</h3>
+                    <p>Interactive sales and demographics dashboard built from cleaned SQL Server data in Power BI.</p>
+                    <a href="https://github.com/brian-mutsetsa/Basic-Data-Analysis-End-to-End-Project-SQL-to-PowerBI-" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+
+                <div class="project-card" data-category="machine-learning">
+                    <img src="/Portfolio-Website/assets/sea-level-predictor-kkjIShJm.jpg" alt="Sea Level Predictor">
+                    <h3>Sea Level Predictor</h3>
+                    <p>Regression analysis with Pandas and Matplotlib to predict sea level rise based on historical NOAA data.</p>
+                    <a href="https://github.com/brian-mutsetsa/boilerplate-sea-level-predictor" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+                
+                <div class="project-card" data-category="software-dev">
+                    <img src="/Portfolio-Website/assets/paris-bakery-Cb5R6MIO.png" alt="Paris-Cape Town Bakery">
+                    <h3>Paris-Cape Town Bakery</h3>
+                    <p>Mock website for a cafe in Cape Town with a Parisian touch.</p>
+                    <a href="https://codex-solutions-25.github.io/Paris-Cape-Town-Bakery/" target="_blank" rel="noopener noreferrer">View Live Site</a>
+                </div>
+
+                <div class="project-card" data-category="software-dev">
+                    <img src="/Portfolio-Website/assets/tessas-bakery-BKRRYiKA.png" alt="Tessa's Bakery">
+                    <h3>Tessa's Bakery</h3>
+                    <p>Vibrant mock website for a popular sweet bakery in Cape Town.</p>
+                    <a href="https://codex-solutions-25.github.io/Tessa-s-Bakery/" target="_blank" rel="noopener noreferrer">View Live Site</a>
+                </div>
+
+                <div class="project-card" data-category="software-dev">
+                    <img src="/Portfolio-Website/assets/german-bakery-DGqkmWVg.png" alt="Old German Bakery & Restaurant">
+                    <h3>Old German Bakery</h3>
+                    <p>Mock website for a traditional German bakery and restaurant in Texas.</p>
+                    <a href="https://codex-solutions-25.github.io/Old-German-Bakery-Restaurant/" target="_blank" rel="noopener noreferrer">View Live Site</a>
+                </div>
+
+                <div class="project-card" data-category="software-dev">
+                    <img src="/Portfolio-Website/assets/explorable-byo-FZ0FyAZi.png" alt="Explorable BYO">
+                    <h3>ExplorAble Collection</h3>
+                    <p>A premium, accessibility-first tourism hub for luxury venues in Zimbabwe using Next.js & Supabase.</p>
+                    <a href="https://explorable-byo.vercel.app" target="_blank" rel="noopener noreferrer">View Live Site</a>
+                </div>
+
+                <div class="project-card" data-category="machine-learning">
+                    <img src="/Portfolio-Website/assets/health-tracker-DaYhr5Aa.png" alt="Health Tracker System">
+                    <h3>Health Tracker System</h3>
+                    <p>Healthcare monitoring system for chronic patients using Flutter and a Django backend with Machine Learning.</p>
+                    <a href="https://health-tracker-system-production.up.railway.app/admin/login/?next=/admin/" target="_blank" rel="noopener noreferrer">View Live Site</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/brian-mutsetsa-025059263/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/brian-mutsetsa" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2025 Brian Tanaka Mutsetsa. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
