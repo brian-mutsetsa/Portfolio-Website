@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System | Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    
+    <header class="main-header">
+        <div class="logo">
+            <a href="/">BTM</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/robotics.html">Robotics & STEM</a></li>
+                <li><a href="/software.html">Software & Data</a></li>
+                <li><button class="theme-toggle-btn" aria-label="Toggle Theme"><i class="fas fa-sun"></i></button></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <nav class="side-nav">
+        <ul>
+            <li><a href="/" class="side-nav-link">Home</a></li>
+            <li><a href="/robotics.html" class="side-nav-link">Robotics & STEM</a></li>
+            <li><a href="/software.html" class="side-nav-link">Software & Data</a></li>
+            <li><button class="theme-toggle-btn" aria-label="Toggle Theme"><i class="fas fa-sun"></i></button></li>
+        </ul>
+    </nav>
+
+    <main id="swup" class="transition-fade">
+        <section class="hero-section" style="height: 50vh;">
+            <div class="hero-content animate-on-scroll">
+                <h1 class="hero-title">Employee Management System</h1>
+                <p class="hero-subtitle">A robust desktop application for HR tracking and data management.</p>
+                <a href="https://github.com/brian-mutsetsa/Employee-Management-System-Python" target="_blank" rel="noopener noreferrer" class="cta-button">View Source Code</a>
+            </div>
+        </section>
+
+        <section class="content-section animate-on-scroll">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 1000px; margin: 0 auto; background: var(--card-bg); padding: 3rem; border-radius: 12px; border: 1px solid var(--card-border);">
+                <div>
+                    <h2 style="color: var(--neon-blue); margin-bottom: 1rem;">The Challenge</h2>
+                    <p style="margin-bottom: 2rem;">Small to medium businesses often rely on scattered spreadsheets to manage employee data, leading to inefficiencies, data loss, and security risks. The goal was to build a secure, localized desktop solution that could handle CRUD operations seamlessly.</p>
+                    
+                    <h2 style="color: var(--neon-blue); margin-bottom: 1rem;">The Solution</h2>
+                    <p>I developed a full-stack Python desktop application using CustomTkinter for a modern UI and SQLite3 for a lightweight, reliable backend. The system includes built-in disaster recovery planning to ensure data integrity.</p>
+                </div>
+                <div>
+                    <img src="/Images/employee-management-system.jpg" alt="App Screenshot" style="width: 100%; border-radius: 8px; border: 1px solid var(--card-border);">
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section animate-on-scroll">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="skills-grid" style="max-width: 800px; margin: 0 auto;">
+                <div class="skill-card-detailed" style="text-align: center;">
+                    <h4>Python</h4>
+                    <p>Core application logic and data processing.</p>
+                </div>
+                <div class="skill-card-detailed" style="text-align: center;">
+                    <h4>CustomTkinter</h4>
+                    <p>Modern, responsive graphical user interface.</p>
+                </div>
+                <div class="skill-card-detailed" style="text-align: center;">
+                    <h4>SQLite3</h4>
+                    <p>Secure, embedded database management.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/brian-mutsetsa-025059263/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/brian-mutsetsa" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2025 Brian Tanaka Mutsetsa. All Rights Reserved.</p>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>

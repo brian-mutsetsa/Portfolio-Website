@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brian-mutsetsa/Portfolio-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brian-mutsetsa/Portfolio-Website/issues"
+  },
+  "homepage": "https://github.com/brian-mutsetsa/Portfolio-Website#readme",
+  "devDependencies": {
+    "lenis": "^1.3.23",
+    "swup": "^4.9.0",
+    "vite": "^8.0.13"
+  }
+}

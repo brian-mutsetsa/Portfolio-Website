@@ -26,12 +26,10 @@
         </div>
         <nav class="main-nav">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/robotics.html">Robotics & STEM</a></li>
+                <li><a href="/software.html">Software & Data</a></li>
+                <li><button class="theme-toggle-btn" aria-label="Toggle Theme"><i class="fas fa-sun"></i></button></li>
             </ul>
         </nav>
         <div class="hamburger">
@@ -43,25 +41,23 @@
 
     <nav class="side-nav">
         <ul>
-            <li><a href="#about" class="side-nav-link">About</a></li>
-            <li><a href="#skills" class="side-nav-link">Skills</a></li>
-            <li><a href="#projects" class="side-nav-link">Projects</a></li>
-            <li><a href="#certifications" class="side-nav-link">Certifications</a></li>
-            <li><a href="#experience" class="side-nav-link">Experience</a></li>
-            <li><a href="#contact" class="side-nav-link">Contact</a></li>
+            <li><a href="/" class="side-nav-link">Home</a></li>
+            <li><a href="/robotics.html" class="side-nav-link">Robotics & STEM</a></li>
+            <li><a href="/software.html" class="side-nav-link">Software & Data</a></li>
+            <li><button class="theme-toggle-btn" aria-label="Toggle Theme"><i class="fas fa-sun"></i></button></li>
         </ul>
     </nav>
 
-    <main>
+    <main id="swup" class="transition-fade">
         <section class="hero-section">
             <div class="hero-content animate-on-scroll">
                 <h1 class="hero-title">Brian Tanaka Mutsetsa</h1>
-                <p class="hero-subtitle">Data Scientist & Software Engineer <br> Transforming Data into Actionable Insights</p>
+                <p class="hero-subtitle">Software Developer | Robotics Instructor | Future AI Engineer</p>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/brian-mutsetsa-025059263/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/brian-mutsetsa" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
-                <a href="#projects" class="cta-button">View My Work</a>
+                <a href="#gateways" class="cta-button">View My Work</a>
             </div>
         </section>
 
@@ -72,150 +68,35 @@
                     <img src="Images/about.jpg" alt="Brian Tanaka Mutsetsa">
                 </div>
                 <div class="about-text">
-                    <p>I am a detail-oriented Data Scientist and Software Engineer, specializing in data analysis, web development, and IT solutions. My approach is methodical and focused: I transform raw data into clear, actionable insights using tools like SQL, Python, and Power BI. With experience in developing responsive websites and managing projects from concept to delivery, I bring a proven ability to deliver measurable results through both professional work and self-driven projects.</p>
-                    <br>
-                    <a href="Documents/Brian .T. Mutsetsa - Resume.pdf" class="cta-button" >Download Resume</a>
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem;">I am a technology professional driven by one core mission: <strong>building intelligent systems that solve real business and societal problems.</strong></p>
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem;">My journey began in IT systems and infrastructure support, where I developed hands-on experience in troubleshooting, enterprise software implementation, and process optimization. Over time, this expanded into software engineering, data analytics, robotics education, and digital transformation initiatives.</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem;">Today, I operate at the intersection of technology, business systems, education, and innovation—designing solutions that improve efficiency, automate workflows, and turn raw operational data into actionable intelligence.</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem;">My long-term vision is to transition into <strong>Machine Learning and Artificial Intelligence Engineering</strong>, where I can build scalable intelligent systems for Africa and beyond.</p>
+                    <a href="/Brian .T. Mutsetsa - Resume.pdf" class="cta-button" target="_blank" rel="noopener noreferrer">Download Resume</a>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="content-section animate-on-scroll">
-            <h2 class="section-title">Technical Skills</h2>
-            
-            <h3 class="skills-subtitle">Programming & Databases</h3>
-            <div class="skills-grid">
-                <div class="skill-card-detailed">
-                    <h4>Python</h4>
-                    <p>Pandas, NumPy, SciPy, MatPlotLib for data manipulation, analysis, and visualization.</p>
-                </div>
-                <div class="skill-card-detailed">
-                    <h4>MS SQL Server</h4>
-                    <p>Querying, joining, and aggregating data to prepare datasets for analysis.</p>
-                </div>
-            </div>
-
-            <h3 class="skills-subtitle">BI & Visualization</h3>
-            <div class="skills-grid">
-                <div class="skill-card-detailed">
-                    <h4>Power BI</h4>
-                    <p>Building interactive dashboards to track KPIs and reveal business trends.</p>
-                </div>
-                <div class="skill-card-detailed">
-                    <h4>MS Excel</h4>
-                    <p>Advanced proficiency including Pivot Tables and Conditional Formatting for reporting.</p>
-                </div>
-                 <div class="skill-card-detailed">
-                    <h4>Visualization Libraries</h4>
-                    <p>Using Matplotlib and Seaborn in Python to create insightful static and interactive plots.</p>
-                </div>
-            </div>
-
-            <h3 class="skills-subtitle">Core Competencies</h3>
-            <div class="skills-grid">
-                <div class="skill-card-detailed">
-                    <h4>Exploratory Data Analysis (EDA)</h4>
-                    <p>Uncovering patterns, spotting anomalies, and checking assumptions with statistical summaries.</p>
-                </div>
-                <div class="skill-card-detailed">
-                    <h4>Data Management & Privacy</h4>
-                    <p>Designing structured databases and anonymizing data to ensure regulatory compliance.</p>
-                </div>
-                <div class="skill-card-detailed">
-                    <h4>Data Engineering</h4>
-                    <p>Creating efficient data pipelines to aggregate, clean, and prepare data for analysis.</p>
-                </div>
-                <div class="skill-card-detailed">
-                    <h4>Workflow Automation</h4>
-                    <p>Developing scripts and processes to automate repetitive data tasks, increasing efficiency.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="content-section animate-on-scroll">
-            <h2 class="section-title">Projects</h2>
-            <div class="filter-container">
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="data-analysis">Data Analysis & Viz</button>
-                    <button class="filter-btn" data-filter="software-dev">Software Dev</button>
-                    <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
-                </div>
-            </div>
-            
+        <section id="gateways" class="content-section animate-on-scroll">
+            <h2 class="section-title">Explore My Work</h2>
             <div class="projects-grid">
-                <div class="project-card" data-category="data-analysis">
-                    <img src="Images/end-to-end-bi-dashboard.jpg" alt="Power BI Dashboard">
-                    <h3>End-to-End BI Dashboard</h3>
-                    <p>Executed an end-to-end project from data cleaning in SQL Server to building an interactive sales and demographics dashboard in Power BI.</p>
-                    <a href="https://github.com/brian-mutsetsa/Basic-Data-Analysis-End-to-End-Project-SQL-to-PowerBI-" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <div class="project-card" style="text-align: center; flex: 1; min-width: 250px;">
+                    <i class="fas fa-robot" style="font-size: 4rem; color: var(--neon-blue); padding: 2rem 0;"></i>
+                    <h3>Robotics & STEM</h3>
+                    <p>Teaching over 500 students the fundamentals of embedded systems, logic, and intelligent mechanics.</p>
+                    <a href="/robotics.html" style="margin: 1rem auto;">Explore Robotics</a>
                 </div>
-                <div class="project-card" data-category="data-analysis">
-                    <img src="Images/book-sales-analysis.jpg" alt="Book Sales Analysis">
-                    <h3>Book Sales Analysis</h3>
-                    <p>Analyzed a Kaggle dataset on book sales using Python (Pandas, Seaborn) to uncover trends in ratings, pricing, and genre popularity.</p>
-                    <a href="https://github.com/brian-mutsetsa/Python-Data-Analysis-Portfolio-Project---Book-Sales" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <div class="project-card" style="text-align: center; flex: 1; min-width: 250px;">
+                    <i class="fas fa-code" style="font-size: 4rem; color: var(--neon-blue); padding: 2rem 0;"></i>
+                    <h3>Software Development</h3>
+                    <p>Building robust systems, ERPs, and web applications that solve real-world operational problems.</p>
+                    <a href="/software.html" style="margin: 1rem auto;">View Software</a>
                 </div>
-                <div class="project-card" data-category="data-analysis">
-                    <img src="Images/volleyball-performance-eda.jpg" alt="Volleyball Analytics">
-                    <h3>Volleyball Performance EDA</h3>
-                    <p>Conducted Exploratory Data Analysis on the 2023 Volleyball Nations League dataset to find insights on team and player performance.</p>
-                    <a href="https://github.com/brian-mutsetsa/Exploratory-Data-Analysis-with-Python-Pandas---Volleyball-Dataset" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                </div>
-                 <div class="project-card" data-category="data-analysis">
-                    <img src="Images/geospatial-crime-analysis.jpg" alt="Choropleth Map">
-                    <h3>Geospatial Crime Analysis</h3>
-                    <p>Identified the most dangerous US states by creating a choropleth map with Python, Pandas, and GeoJSON data as part of a Geoinformatics assignment.</p>
-                    <a href="https://github.com/brian-mutsetsa/Most_dangerous_state_in_America_between_2018_-_2022" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                </div>
-
-                <div class="project-card" data-category="software-dev">
-                    <img src="Images/employee-management-system.jpg" alt="Employee Management System">
-                    <h3>Employee Management System</h3>
-                    <p>A full-stack desktop application with a CustomTkinter UI and SQLite3 backend for employee data management, including a disaster recovery plan.</p>
-                    <a href="https://github.com/brian-mutsetsa/Employee-Management-System-Python" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                </div>
-                 <div class="project-card" data-category="software-dev">
-                    <img src="Images/personal-performance-tracker.jpg" alt="Performance Tracking App">
-                    <h3>Personal Performance Tracker</h3>
-                    <p>Desktop app built with Tkinter, SQLite, and Matplotlib to track and visualize personal weekly performance metrics with historical trends.</p>
-                    <a href="https://github.com/brian-mutsetsa/Performance-App" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                </div>
-                 <div class="project-card" data-category="software-dev">
-                    <img src="Images/rick-and-morty-space-invaders.jpg" alt="Rick and Morty Game">
-                    <h3>Rick & Morty Space Invaders</h3>
-                    <p>A classic 2D shooter game built with Pygame, featuring custom assets, scoring, and dynamic enemy movement with a Rick and Morty theme.</p>
-                    <a href="https://github.com/brian-mutsetsa/Rick-and-Morty-Space-Invaders" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                </div>
-
-                <div class="project-card" data-category="machine-learning">
-                    <img src="Images/sea-level-predictor.jpg" alt="Sea Level Predictor">
-                    <h3>Sea Level Predictor</h3>
-                    <p>FreeCodeCamp project using regression analysis with Pandas and Matplotlib to predict sea level rise based on historical NOAA data.</p>
-                    <a href="https://github.com/brian-mutsetsa/boilerplate-sea-level-predictor" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                </div>
-                <div class="project-card" data-category="machine-learning">
-                    <img src="Images/page-view-time-series-visualizer.jpg" alt="Time Series Visualizer">
-                    <h3>Page View Time Series Visualizer</h3>
-                    <p>A FreeCodeCamp project to clean and visualize forum page view data using Pandas and Matplotlib to show trends over time.</p>
-                    <a href="https://github.com/brian-mutsetsa/boilerplate-page-view-time-series-visualizer" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                </div>
-                <div class="project-card" data-category="machine-learning">
-                    <img src="Images/medical-data-visualizer.jpg" alt="Medical Data Visualizer">
-                    <h3>Medical Data Visualizer</h3>
-                    <p>Built a Flask API to process medical data with Pandas and generate categorical plots and heatmaps with Matplotlib/Seaborn.</p>
-                    <a href="https://github.com/brian-mutsetsa/boilerplate-medical-data-visualizer" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                </div>
-                 <div class="project-card" data-category="machine-learning">
-                    <img src="Images/demographic-data-analyzer.jpg" alt="Demographic Analyzer">
-                    <h3>Demographic Data Analyzer</h3>
-                    <p>Analyzed US Census data using Pandas to answer specific demographic questions about race, education, and salary distribution.</p>
-                    <a href="https://github.com/brian-mutsetsa/boilerplate-demographic-data-analyzer" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                </div>
-                 <div class="project-card" data-category="machine-learning">
-                    <img src="Images/statistics-calculator.jpg" alt="Statistics Calculator">
-                    <h3>Statistics Calculator</h3>
-                    <p>A Python function using NumPy to calculate mean, variance, standard deviation, min, max, and sum across a 3x3 matrix.</p>
-                    <a href="https://github.com/brian-mutsetsa/boilerplate-mean-variance-standard-deviation-calculator" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <div class="project-card" style="text-align: center; flex: 1; min-width: 250px;">
+                    <i class="fas fa-chart-line" style="font-size: 4rem; color: var(--neon-blue); padding: 2rem 0;"></i>
+                    <h3>Data Science</h3>
+                    <p>Transforming raw operational data into actionable intelligence with SQL, Python, and PowerBI.</p>
+                    <a href="/software.html#projects" style="margin: 1rem auto;">See Analytics</a>
                 </div>
             </div>
         </section>
@@ -246,12 +127,36 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
+                        <h3>IT Technician & Robotics Instructor</h3>
+                        <p><strong>Robokorda Zimbabwe</strong> | <em>Oct 2025 - Present</em></p>
+                        <ul>
+                            <li>Delivered robotics, coding, and STEM education to students, strengthening technical and analytical thinking.</li>
+                            <li>Supported the implementation of an ERP system for organizational KPI tracking.</li>
+                            <li>Diagnosed, repaired, and maintained IT infrastructure and learning environments.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
                         <h3>Website Designer Intern</h3>
                         <p><strong>UM Designs Creative Agency</strong> | <em>Jan 2023 - Jul 2023</em></p>
                         <ul>
                             <li>Delivered custom WordPress websites tailored to client business needs, including e-commerce functionality.</li>
                             <li>Conducted data analysis to optimize website performance and user experience.</li>
                             <li>Managed multiple projects, ensuring quality, timely delivery, and robust technical configurations.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>IT Attachée</h3>
+                        <p><strong>National Railways of Zimbabwe (NRZ)</strong> | <em>Sep 2022 - Dec 2022</em></p>
+                        <ul>
+                            <li>Diagnosed and repaired critical hardware systems to reduce operational downtime.</li>
+                            <li>Configured shared network printers and supported internal connectivity.</li>
+                            <li>Conducted remote troubleshooting across distributed locations to support business continuity.</li>
                         </ul>
                     </div>
                 </div>
@@ -315,6 +220,6 @@
         <p>&copy; 2025 Brian Tanaka Mutsetsa. All Rights Reserved.</p>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script type="module" src="/js/main.js"></script>
 </body>
 </html>
